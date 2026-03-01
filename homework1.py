@@ -154,4 +154,155 @@ products = [
 def expensiveProduct(products):
     print(max(products, key = lambda x:x['price']))
 
+
 expensiveProduct(products)
+
+
+# homework 2 
+
+#1 set(add)
+nums = {1,5,6,8,4,9,5}
+nums.add(10)
+nums.add('banana')
+print(nums)
+
+# clear() Method
+nums.clear()
+print(nums)
+
+# copy() Method
+y = nums.copy()
+x = nums.copy()
+print(y)
+
+#difference() Method
+nums = {1,5,6,8,4,9,5}
+nums2 = {2,3,10,15,1}
+z = nums.difference(nums2)
+print(z)
+a = {'apple','banana','pineapple'}
+b = {'cherry','melon','banana'}
+c = a.difference(b)
+print(c)
+
+#difference_update() Method
+a = {'apple','banana','pineapple'}
+b = {'cherry','melon','banana'}
+a.difference_update(b)
+print(a)
+d = {'mouse','game','tower'}
+e = {'game','hamburg','computer'}
+d.difference_update(e)
+print(d)
+
+#discard() Method
+e = {'game','hamburg','computer'}
+e.discard('hamburg')
+e.discard('game')
+print(e)
+
+#intersection() Method
+a = {'apple','banana','pineapple'}
+b = {'cherry','melon','banana'}
+z= a.intersection(b)
+print(z)
+f = {'car','engine','ai'}
+g = {'bread','car','phone'}
+h = f.intersection(g)
+print(h)
+
+# intersection_update()Method
+a = {'apple','banana','pineapple'}
+b = {'cherry','melon','banana'}
+a.intersection_update(b)
+print(a)
+f = {'car','engine','ai'}
+g = {'bread','car','phone'}
+f.intersection_update(g)
+print(f)
+
+#isdisjoint() Method
+t = {'css','java','python'} 
+w = {'c+','c','javascript'}
+q = t.isdisjoint(w)
+print(q)
+d = {'mouse','game','tower'}
+e = {'game','hamburg','computer'}
+r = d.isdisjoint(e)
+print(r)
+
+#issubset() Method
+a = {'glass','car', 'snow'}
+s = {'insta','microsoft','hardware','glass','car', 'snow'}
+m = a.issubset(s)
+print(m)
+t = {'css','java','python'} 
+w = {'c+','c','javascript'}
+b=t.issubset(w)
+print(b) 
+
+#issuperset() Method
+j = {5,7,8}
+l = {4,10,5,7,8,9,12}
+z = l.issuperset(j)
+print(z)
+a = {1,2,3,4,5,6}
+b = {2,3,4}
+u = a.issuperset(b)
+print(u)
+
+#pop() Method
+j = {5,7,8,10,15}
+j.pop()
+print(j)
+a = {'glass','car', 'snow'}
+a.pop()
+print(a)
+
+#remove() Method
+t = {'css','java','python'} 
+t.remove('css')
+print(t)
+e = {'game','hamburg','computer'}
+e.remove('computer')
+print(e)
+
+#symmetric_difference() Method
+a = {1,2,3,4,5,6}
+b = {2,3,4}
+pip = a.symmetric_difference(b)
+print(pip)
+d = {'mouse','game','tower'}
+e = {'game','hamburg','computer'}
+run = d.symmetric_difference(e)
+print(run)
+
+#symmetric_difference_update() Method
+a = {1,2,3,4,5,6}
+b = {2,3,4}
+a.symmetric_difference_update(b)
+print(a)
+d = {'mouse','game','tower'}
+e = {'game','hamburg','computer'}
+d.symmetric_difference_update(e)
+print(d)
+
+#union() Method
+num3 = {7,8,9,10}
+num4 = {1,2,3,4,5}
+num5 = num3.union(num4)
+print(num5)
+d = {'mouse','game','tower'}
+e = {'game','hamburg','computer'}
+p = d | e
+print(p)
+
+#update() Method
+num3 = {7,8,9,10}
+num4 = {1,2,3,4,5}
+num3.update(num4)
+print(num3)
+a = {'apple','banana','pineapple'}
+b = {'cherry','melon','banana'}
+a.update(b)
+print(a)
