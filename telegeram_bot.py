@@ -1,6 +1,6 @@
 # sendmessage
 # import requests
-# token = '8404993460:AAEr4kHeugUMHtEHT9KmD0xYPyQJhp9Qm0Q'
+# token = '////'
 # method = 'sendMessage'
 # response = requests.post(
 #     url = f'https://api.telegram.org/bot{token}/{method}',
